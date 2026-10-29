@@ -1,0 +1,43 @@
+# --- Python virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python cache and build files ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Secrets and local configuration (never commit these) ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# --- Streamlit / Jupyter local files ---
+.ipynb_checkpoints/
+
+# --- Editors and operating system files ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Generated files ---
+*.log
+*.zip
+tmp/
+output/
